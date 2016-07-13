@@ -1,0 +1,555 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif; }
+
+h1 {
+  font-family: "Poiret One", cursive; }
+
+h2 {
+  font-family: "Poiret One", cursive;
+  font-size: 2em;
+  -webkit-margin-before: 0.67em;
+  -webkit-margin-after: 0.67em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px; }
+
+/**grid* */
+[class*="col-"] {
+  float: left;
+  min-height: 1px;
+  padding: 10px; }
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-5 {
+  width: 41.66%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33%; }
+
+.col-8 {
+  width: 66.66%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-12 {
+  width: 100%; }
+
+.col-offset-1 {
+  margin-left: 8.33%; }
+
+.col-offset-2 {
+  margin-left: 16.66%; }
+
+.col-offset-3 {
+  margin-left: 25%; }
+
+.col-offset-4 {
+  margin-left: 33.33%; }
+
+.col-offset-5 {
+  margin-left: 41.66%; }
+
+.col-offset-6 {
+  margin-left: 50%; }
+
+.col-offset-7 {
+  margin-left: 58.33%; }
+
+.col-offset-8 {
+  margin-left: 66.66%; }
+
+.col-offset-9 {
+  margin-left: 75%; }
+
+.col-offset-10 {
+  margin-left: 83.33%; }
+
+.col-offset-11 {
+  margin-left: 91.66%; }
+
+/**koniec gridu */
+/**menu */
+header {
+  width: 100%;
+  min-height: 50px;
+  background: #313332;
+  position: relative;
+  color: #fff;
+  text-transform: uppercase; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+#logo {
+  padding: 5px 20px;
+  float: left; }
+
+header nav ul {
+  float: right;
+  margin: 0;
+  padding: 0; }
+  header nav ul a li {
+    display: inline-block;
+    padding: 14px 10px;
+    color: white;
+    transition: 1s; }
+    header nav ul a li:hover {
+      background: #5E615F;
+      cursor: pointer;
+      height: 50px; }
+
+/**jumbotron* */
+.background {
+  height: 600px;
+  width: 100%;
+  background: url("http://huntingnsurvival.com/wp-content/uploads/2016/06/cover-min.png") fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: block;
+  padding: 0; }
+
+.slogan {
+  width: 500px;
+  height: 150px;
+  float: right;
+  display: block;
+  position: relative;
+  margin: 225px 0;
+  background: rgba(0, 0, 0, 0.5);
+  font-family: "Poiret One", cursive; }
+
+.slogan h1 {
+  color: white;
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 46px; }
+.slogan p {
+  color: white;
+  margin: 0;
+  padding: 0 20px;
+  font-size: 32px; }
+
+/**about* */
+#container-about {
+  max-width: 900px;
+  min-height: 220px;
+  margin: 0 auto;
+  position: relative;
+  display: block; }
+
+#container-about .row .col-4 {
+  text-align: center;
+  margin: 20px auto; }
+#container-about h2 {
+  font-size: 26px; }
+#container-about p {
+  font-size: 14px; }
+
+.icon {
+  position: relative;
+  display: block;
+  height: 100px;
+  width: 100px;
+  background: #303231;
+  margin: 20px auto;
+  border-radius: 5px;
+  color: white;
+  font-size: 65px; }
+
+.gold-icon {
+  background: #e5c100; }
+
+.gold {
+  color: #e5c100; }
+
+.icon .fa {
+  margin: 15px auto; }
+
+.text {
+  min-height: 130px;
+  text-align: center; }
+
+/**galeria* */
+.gallery {
+  width: 100%;
+  background: url("http://rtsh.com.br/img/background2.jpg") fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: block;
+  padding: 0; }
+
+.pictures {
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+  height: 90%;
+  width: 100%;
+  position: relative;
+  display: block;
+  overflow: hidden; }
+  .pictures div {
+    position: relative;
+    z-index: 1;
+    float: left;
+    height: 25vw;
+    overflow: hidden;
+    padding: 0; }
+
+.img {
+  position: relative;
+  height: 100%;
+  transition: 0.8s; }
+
+.pictures:hover .img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); }
+
+.faded {
+  color: transparent;
+  background: black;
+  height: 25vw;
+  width: 100%;
+  margin: 0;
+  top: 0;
+  left: 0;
+  text-align: center;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -ms-transition: all 0.8s ease;
+  transition: all 0.8s ease; }
+  .faded h2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.5s;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    font-size: 3em; }
+
+.gallery-photo {
+  width: 100%;
+  transition: 0.5s; }
+
+#photo-kitchen {
+  background: url("http://www.wcone.co.uk/wp-content/themes/wcone/timthumb.php?src=http://www.wcone.co.uk/wp-content/uploads/2014/04/NK6746_Spot_180___WeiSZ_Hochglanz.jpg&w=1440&h=500&q=80");
+  background-size: cover; }
+
+#photo-livingroom {
+  background: url("https://slack-imgs.com/?c=1&o1=wi400.he400&url=https%3A%2F%2Fs-media-cache-ak0.pinimg.com%2F736x%2Fe9%2F01%2F11%2Fe90111fb5622179fa44f80e54487ec05.jpg");
+  background-size: cover; }
+
+#photo-bedroom {
+  background: url("https://slack-imgs.com/?c=1&o1=wi400.he286&url=http%3A%2F%2Fwww.avetexfurniture.com%2Fimages%2Fproducts%2F0%2F43460%2Fb-bedroom-modern-set.jpg");
+  background-size: cover; }
+
+#photo-taras {
+  background: url("https://slack-imgs.com/?c=1&o1=wi400.he263&url=http%3A%2F%2Fcdn.decoist.com%2Fwp-content%2Fuploads%2F2012%2F07%2Frooftop-space-with-modern-couch-outdoor-fireplace-and-jacuzzi.jpg");
+  background-size: cover; }
+
+#photo-babyroom {
+  background: url("https://slack-imgs.com/?c=1&o1=wi400.he358&url=http%3A%2F%2Fwww.ikuzobaby.com%2Fwp-content%2Fuploads%2F2015%2F09%2FBaby-Room-Decorations.jpg");
+  background-size: cover; }
+
+#photo-bathroom {
+  background: url("https://slack-imgs.com/?c=1&o1=wi400.he142&url=http%3A%2F%2Fwww.capitala.co.uk%2Fresources%2Fproject4%2Fp4_2.jpg");
+  background-size: cover; }
+
+.faded:hover .gallery-photo {
+  opacity: 0.7;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); }
+
+.faded:hover h2 {
+  color: white; }
+
+.container-1000 {
+  max-width: 1000px;
+  min-height: 220px;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  text-align: center; }
+
+.shop {
+  height: 200px;
+  width: 200px;
+  margin: 20px auto;
+  border-radius: 50%; }
+
+/**praca* */
+.job {
+  background: url("http://storage.googleapis.com/wzukusers/user-18525197/images/569114e02a177eUHwk0z/Savin-NY-Website-Background-Web_d1450.jpg") fixed;
+  padding-top: 40px;
+  padding-bottom: 0;
+  width: 100%;
+  max-height: 480px; }
+
+.job:before,
+.job:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.container-job {
+  max-width: 1000px;
+  min-height: 440px;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  text-align: center; }
+
+.job-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  width: 240px; }
+
+.job-text {
+  text-align: center;
+  padding: 0 40px; }
+  .job-text h2 {
+    font-size: 36px; }
+
+.columns {
+  column-count: 2;
+  margin: 0;
+  text-align: left; }
+  .columns p {
+    margin: 0; }
+
+/**liczby */
+.big-h2 {
+  font-size: 24px; }
+
+.number {
+  font-size: 80px;
+  margin: 5px 0;
+  text-align: center;
+  line-height: 0.5em;
+  padding-top: 20px;
+  letter-spacing: -6px;
+  color: #00aabd;
+  margin-bottom: 30px; }
+
+.description {
+  font-size: 26px;
+  margin: 3px 0;
+  text-align: center;
+  margin: 0; }
+
+/**stopka */
+footer {
+  width: 100%;
+  background: #313332; }
+
+.footer {
+  background: #313332;
+  color: #fff; }
+
+.foot h2 {
+  display: inline-block;
+  text-align: left;
+  float: left; }
+
+.line {
+  content: "";
+  position: relative;
+  height: 2px;
+  width: 100px;
+  background: #fff;
+  display: inline-block;
+  float: left;
+  margin-top: 42px;
+  margin-left: 15px; }
+
+#text {
+  display: block;
+  width: 100%; }
+
+.foot1 {
+  text-align: left;
+  padding-right: 20px; }
+
+.foot2 {
+  text-align: left;
+  padding-left: 20px;
+  margin: 5px; }
+
+.footh {
+  padding: 0; }
+  .footh h2 {
+    display: inline-block;
+    text-align: left;
+    float: left;
+    line-height: 0.9em;
+    font-size: 24px; }
+
+.footh1 {
+  padding: 0;
+  margin-top: 15px; }
+
+/**soicial buttons */
+.button {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  margin: 4px;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: 0.3s; }
+
+.twitter {
+  color: #4099FF; }
+
+.facebook {
+  color: #3B5998; }
+
+.google {
+  color: #DB5A3C; }
+
+.instagram {
+  color: #5C3D2E; }
+
+.github {
+  color: #4183C4; }
+
+.button:hover {
+  color: white;
+  transform: scale(1.1); }
+
+.button.twitter:hover {
+  background: #4099FF; }
+
+.button.facebook:hover {
+  background: #3B5998; }
+
+.button.google:hover {
+  background: #DB5A3C; }
+
+.button.instagram:hover {
+  background: #5C3D2E; }
+
+.button.github:hover {
+  background: #4183C4; }
+
+.social .row .col-12 .fa {
+  margin: 0; }
+
+.number-box {
+  height: 179px;
+  margin-bottom: 40px; }
+
+@media (max-width: 830px) {
+  .col-s-1 {
+    width: 8.33%; }
+
+  .col-s-2 {
+    width: 16.66%; }
+
+  .col-s-3 {
+    width: 25%; }
+
+  .col-s-4 {
+    width: 33.33%; }
+
+  .col-s-5 {
+    width: 41.66%; }
+
+  .col-s-6 {
+    width: 50%; }
+
+  .col-s-7 {
+    width: 58.33%; }
+
+  .col-s-8 {
+    width: 66.66%; }
+
+  .col-s-9 {
+    width: 75%; }
+
+  .col-s-10 {
+    width: 83.33%; }
+
+  .col-s-11 {
+    width: 91.66%; }
+
+  .col-s-12 {
+    width: 100%; }
+
+  #logo {
+    float: none; }
+
+  header .container {
+    text-align: center; }
+    header .container ul {
+      float: none;
+      padding: 20px 0 0 0; }
+      header .container ul li {
+        display: block;
+        max-width: 300px;
+        margin: 0 auto; }
+      header .container ul a {
+        text-decoration: none; }
+
+  .pictures div {
+    height: 50vw; }
+
+  .img {
+    height: 100%;
+    width: auto;
+    overflow: hidden; }
+
+  .job-img {
+    display: none; }
+
+  .foot {
+    text-align: center; }
+
+  .social {
+    margin: 0 auto;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; } }
+
+/*# sourceMappingURL=style.css.map */
