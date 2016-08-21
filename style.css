@@ -5,20 +5,20 @@
 
 body {
   margin: 0;
-  font-family: "Quicksand", sans-serif; }
+  font-family: 'Quicksand', sans-serif; }
 
 h1 {
-  font-family: "Poiret One", cursive; }
+  font-family: 'Poiret One', cursive; }
 
 h2 {
-  font-family: "Poiret One", cursive;
+  font-family: 'Poiret One', cursive;
   font-size: 2em;
   -webkit-margin-before: 0.67em;
   -webkit-margin-after: 0.67em;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px; }
 
-/**grid* */
+/**grid**/
 [class*="col-"] {
   float: left;
   min-height: 1px;
@@ -31,7 +31,8 @@ h2 {
   clear: both; }
 
 .col-1 {
-  width: 8.33%; }
+  width: 8.33%;
+  height: 20px; }
 
 .col-2 {
   width: 16.66%; }
@@ -99,8 +100,8 @@ h2 {
 .col-offset-11 {
   margin-left: 91.66%; }
 
-/**koniec gridu */
-/**menu */
+/**koniec gridu **/
+/**menu **/
 header {
   width: 100%;
   min-height: 50px;
@@ -131,7 +132,7 @@ header nav ul {
       cursor: pointer;
       height: 50px; }
 
-/**jumbotron* */
+/**jumbotron**/
 .background {
   height: 600px;
   width: 100%;
@@ -150,20 +151,21 @@ header nav ul {
   position: relative;
   margin: 225px 0;
   background: rgba(0, 0, 0, 0.5);
-  font-family: "Poiret One", cursive; }
+  font-family: 'Poiret One', cursive; }
 
 .slogan h1 {
   color: white;
   margin: 0;
   padding: 10px 20px;
   font-size: 46px; }
+
 .slogan p {
   color: white;
   margin: 0;
   padding: 0 20px;
   font-size: 32px; }
 
-/**about* */
+/**about**/
 #container-about {
   max-width: 900px;
   min-height: 220px;
@@ -174,8 +176,10 @@ header nav ul {
 #container-about .row .col-4 {
   text-align: center;
   margin: 20px auto; }
+
 #container-about h2 {
   font-size: 26px; }
+
 #container-about p {
   font-size: 14px; }
 
@@ -203,7 +207,7 @@ header nav ul {
   min-height: 130px;
   text-align: center; }
 
-/**galeria* */
+/**galeria**/
 .gallery {
   width: 100%;
   background: url("http://rtsh.com.br/img/background2.jpg") fixed;
@@ -232,7 +236,7 @@ header nav ul {
 .img {
   position: relative;
   height: 100%;
-  transition: 0.8s; }
+  transition: .8s; }
 
 .pictures:hover .img {
   -webkit-transform: scale(1.2);
@@ -311,7 +315,7 @@ header nav ul {
   margin: 20px auto;
   border-radius: 50%; }
 
-/**praca* */
+/**praca**/
 .job {
   background: url("http://storage.googleapis.com/wzukusers/user-18525197/images/569114e02a177eUHwk0z/Savin-NY-Website-Background-Web_d1450.jpg") fixed;
   padding-top: 40px;
@@ -353,7 +357,7 @@ header nav ul {
   .columns p {
     margin: 0; }
 
-/**liczby */
+/**liczby **/
 .big-h2 {
   font-size: 24px; }
 
@@ -373,7 +377,7 @@ header nav ul {
   text-align: center;
   margin: 0; }
 
-/**stopka */
+/**stopka **/
 footer {
   width: 100%;
   background: #313332; }
@@ -424,7 +428,7 @@ footer {
   padding: 0;
   margin-top: 15px; }
 
-/**soicial buttons */
+/**soicial buttons **/
 .button {
   display: inline-block;
   width: 40px;
@@ -436,7 +440,7 @@ footer {
   box-sizing: border-box;
   border-radius: 50%;
   font-size: 20px;
-  transition: 0.3s; }
+  transition: .3s; }
 
 .twitter {
   color: #4099FF; }
@@ -482,43 +486,30 @@ footer {
 @media (max-width: 830px) {
   .col-s-1 {
     width: 8.33%; }
-
   .col-s-2 {
     width: 16.66%; }
-
   .col-s-3 {
     width: 25%; }
-
   .col-s-4 {
     width: 33.33%; }
-
   .col-s-5 {
     width: 41.66%; }
-
   .col-s-6 {
     width: 50%; }
-
   .col-s-7 {
     width: 58.33%; }
-
   .col-s-8 {
     width: 66.66%; }
-
   .col-s-9 {
     width: 75%; }
-
   .col-s-10 {
     width: 83.33%; }
-
   .col-s-11 {
     width: 91.66%; }
-
   .col-s-12 {
     width: 100%; }
-
   #logo {
     float: none; }
-
   header .container {
     text-align: center; }
     header .container ul {
@@ -530,21 +521,16 @@ footer {
         margin: 0 auto; }
       header .container ul a {
         text-decoration: none; }
-
   .pictures div {
     height: 50vw; }
-
   .img {
     height: 100%;
     width: auto;
     overflow: hidden; }
-
   .job-img {
     display: none; }
-
   .foot {
     text-align: center; }
-
   .social {
     margin: 0 auto;
     width: 300px;
