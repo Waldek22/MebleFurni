@@ -8,10 +8,10 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'style.css': 'style.sass'
+          'css/style.css': 'sass/*.sass'
         }
       }
-    }
+    },
     imagemin: {
     dynamic: {
         files: [{
@@ -20,7 +20,7 @@ module.exports = function(grunt) {
             src: ['**/*.{png,jpg,gif}'],
             dest: 'images/build/'
         }]
-    }
+    },
     watch: {
     scripts: {
         files: ['sass/*.sass'],
